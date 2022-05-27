@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'space mono';
+}
+body{
+    background-color:hsl(185, 41%, 84%) ;
+    margin-top: 50px;
+}
+.logo{
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.container{
+    background: white;
+    border-radius: 15px;
+    padding:20px 20px ;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.input{
+    margin: 10px 0px 30px 0px;
+    border: none;
+    background: hsl(189, 41%, 97%);
+    width: 100%;
+    padding: 1rem;
+    text-align: right;
+    outline:none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.input::before{
+   
+    content: '';
+    position: absolute;
+    width: 50px;
+    height:50px;
+    background: red;
+}
+.input:focus{
+    border: 2px solid hsl(185, 41%, 84%);
+}
+.icon{
+    position: absolute;
+    left: 2rem;
+    margin-top: 25px;
+}
+.flex{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.flex button{
+    width: 40%;
+    text-align: center;
+    background: hsl(183, 100%, 15%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .8rem 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.flex button.active{
+    background: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.flex .custom{
+    background: hsl(189, 41%, 97%);
+    width: 40%;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .8rem 10px;
+    color: hsl(186, 14%, 43%);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.flex .custom:focus{
+    border: 2px solid hsl(185, 41%, 84%);
+}
+.ll label{
+    align-items: center;
+    justify-content: center;
+}
+.NOP{
+    margin: 30px 0px;
+}
+.NOP .err{
+   color: red;
+   float: right;
+   opacity: 0;
+   transition: opacity 1s ease-in-out;
+}
+.NOP .err.active{
+    opacity: 1;
+}
+.tip{
+    background: hsl(183, 100%, 15%);
+    padding: 40px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.tipA{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+    
+}
+.tipA .small{
+    color: hsl(186, 14%, 43%);
+}
+.tipA .result{
+    color: hsl(172, 67%, 45%);
+    font-size: 2.0rem;
+    font-weight: 700;
+    
+}
+.tip button{
+    color: hsl(183, 100%, 15%);
+    background: hsl(172, 67%, 45%);
+    font-size: 1.0rem;
+    font-weight: 700;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+@media screen and (min-width: 550px) and (max-width: 1400px){
+    .container{
+        display: flex;
+        width:70%;
+        margin: 0 auto;
+        gap: 2.5rem;
+    }
+    .tip{
+        width: 50%;
+        
+    }
+    .tip button{
+     position: relative;
+     top:218px;
+        
+    }
+    .icon{
+        left: 15rem;
+        margin-top: 25px;
+    }
+}
